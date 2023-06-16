@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+:root {
+  --Linear-Gradient: linear-gradient(hsl(236, 72%, 79%),
+      hsl(237, 63%, 64%));
+
+  --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+  --Light-Grayish-Blue: hsl(234, 14%, 84%);
+  --Grayish-Blue: hsl(233, 13%, 49%);
+  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
+
+body {
+  background: #f2f2f2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: var(--Dark-Grayish-Blue);
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/src/assets/bg-top.svg), url(/src/assets/bg-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right top, left bottom;
+  display: grid;
+  place-items: center;
+}
+
+.component {
+  border: 1px solid #222;
+  display: grid;
+  place-items: center;
+}
+
+.component-pricingCard {
+  display: flex;
+  flex-direction: row;
+  
+  gap: 2px;
+}
+
+.pricing-card {
+  background-color: var(--Very-Light-Grayish-Blue);
+  border-radius: 16px;
+  padding: 32px;
+  width: 300px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.line {
+  border: 1px solid var(--Light-Grayish-Blue);
+  width: 100%;
+  margin: 16px;
+}
+
