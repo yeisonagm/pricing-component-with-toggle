@@ -3,7 +3,7 @@ export function Pricing({ title, price, storage, numberUsers, transfer }) {
 
     return (
         <article className={`pricing-card ${nameCard}`}>
-            <h3>{title}</h3>
+            <h2 className={title}>{title}</h2>
             <h1>{price}</h1>
             <div className="line"></div>
             <span>{storage}</span>
@@ -13,7 +13,9 @@ export function Pricing({ title, price, storage, numberUsers, transfer }) {
             <span>{`Send up to ${transfer} GB`}</span>
             <div className="line"></div>
 
-            <button>Learn More</button>
+            <button className="pricing-button">
+                <strong className="pricing-button-text">Learn More</strong>
+            </button>
         </article>
     );
 }

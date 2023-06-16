@@ -2,7 +2,7 @@
 
 
 :root {
-  --Linear-Gradient: linear-gradient(hsl(236, 72%, 79%),
+  --Linear-Gradient: linear-gradient(to right, hsl(236, 72%, 79%),
       hsl(237, 63%, 64%));
 
   --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
@@ -29,23 +29,30 @@ body {
 }
 
 .component {
-  border: 1px solid #222;
   display: grid;
   place-items: center;
+}
+
+.component-title {
+  font-weight: 700;
+}
+
+.toggle {
+  margin-bottom: 32px;
 }
 
 .component-pricingCard {
   display: flex;
   flex-direction: row;
-  
-  gap: 2px;
+  align-items: center;
 }
 
 .pricing-card {
-  background-color: var(--Very-Light-Grayish-Blue);
+  background-color: #fff;
   border-radius: 16px;
-  padding: 32px;
-  width: 300px; 
+  padding: 20px 32px 32px;
+  width: 350px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,8 +60,43 @@ body {
 }
 
 .line {
-  border: 1px solid var(--Light-Grayish-Blue);
+  border-top: 1px solid var(--Light-Grayish-Blue);
+  opacity: 0.6;
   width: 100%;
   margin: 16px;
 }
 
+.professionalCard {
+  background: var(--Linear-Gradient);
+  color: var(--Very-Light-Grayish-Blue);
+  height: 550px;
+}
+
+
+.pricing-button {
+  background: var(--Linear-Gradient);
+  width: 100%;
+  height: 56px;
+  margin-top: 24px;
+  border: none;
+  outline: none;
+}
+
+.pricing-button-text {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.professionalCard .pricing-button {
+  background: var(--Very-Light-Grayish-Blue);
+}
+
+.professionalCard .pricing-button .pricing-button-text {
+  background: var(--Very-Light-Grayish-Blue);
+  background: var(--Linear-Gradient);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

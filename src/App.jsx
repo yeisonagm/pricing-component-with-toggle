@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className='component'>
-      <h1>Our Pricing</h1>
+      <h1 className='component-title'>Our Pricing</h1>
       <Toggle />
 
       <section className='component-pricingCard'>
