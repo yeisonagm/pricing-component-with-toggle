@@ -8,7 +8,7 @@
   --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
   --Light-Grayish-Blue: hsl(234, 14%, 84%);
   --Grayish-Blue: hsl(233, 13%, 49%);
-  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+  --Dark-Grayish-Blue: hsl(232, 13%, 40%);
 }
 
 body {
@@ -37,14 +37,26 @@ body {
   font-weight: 700;
 }
 
-.toggle {
-  margin-bottom: 32px;
+
+/* -------------------Toggle-------------------- */
+.component-toggle {
+  display: flex;
+  align-items: center;
 }
 
+.toggle-text {
+  margin: 0 16px;
+  font-size: 1.1rem;
+  color: var(--Grayish-Blue);
+}
+
+
+/* -------------------Pricing Card-------------------- */
 .component-pricingCard {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 56px;
 }
 
 .pricing-card {
@@ -56,7 +68,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .line {
@@ -79,7 +91,6 @@ body {
   height: 56px;
   margin-top: 24px;
   border: none;
-  outline: none;
 }
 
 .pricing-button-text {
