@@ -14,9 +14,9 @@
     hsl(237, 63%, 64%));
     background-color: #222;
     display: inline-block;
-    width: 80px;
-    height: 42px;
-    border-radius: 42px;
+    width: 60px;
+    height: 32px;
+    border-radius: 32px;
     cursor: pointer;
 }
 
@@ -24,16 +24,16 @@
     content: '';
     position: absolute;
     background-color: hsl(240, 78%, 98%);
-    width: 32px;
-    height: 32px;
-    border-radius: 32px;
-    right: 5px;
-    top: 5px;
+    width: 26px;
+    height: 26px;
+    border-radius: 26px;
+    right: 3px;
+    top: 3px;
     transition: all 0.6s;
 }
 
 input[type="checkbox"]:checked + .switch::after {
-    transform: translateX(-38px);
+    transform: translateX(-28px);
 }
 
 .switch:hover {

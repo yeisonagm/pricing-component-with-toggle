@@ -20,7 +20,8 @@ body {
 
 #root {
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  padding-bottom: 24px;
   background-image: url(/src/assets/bg-top.svg), url(/src/assets/bg-bottom.svg);
   background-repeat: no-repeat;
   background-position: right top, left bottom;
@@ -95,7 +96,7 @@ body {
 
 .pricing-button-text {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.1rem;
   letter-spacing: 3px;
 }
 
@@ -110,4 +111,61 @@ body {
   -moz-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+
+/* -------------------Responsive-------------------- */
+@media (width < 1275px) {
+  #root {
+    width: 100vw;
+    height: 100%;
+  }
+
+  .pricing-card {
+    font-size: 0.8rem;
+    padding: 20px 32px 32px;
+    width: 240px;
+    height: 450px;
+  }
+
+  .professionalCard {
+    background: var(--Linear-Gradient);
+    color: var(--Very-Light-Grayish-Blue);
+    height: 500px;
+  }
+
+  .component-title {
+    font-size: 1.9rem;
+  }
+
+  .toggle-text {
+    font-size: 0.9rem;
+  }
+
+  .pricing-button-text {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+
+  span {
+    font-size: 0.9rem;
+  }
+
+}
+
+/* -------------------Mobile-------------------- */
+@media (width < 925px) {
+  .component-pricingCard {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+    margin-top: 36px;
+  }
+
+  .pricing-card {
+    font-size: 0.8rem;
+    padding: 15px 32px 32px;
+    width: 260px;
+    height: 450px;
+  }
 }
